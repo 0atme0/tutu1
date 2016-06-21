@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6633B4472246B6B20FAF7A43 /* Pods_tutu_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF94C83DC13D1C46449CB575 /* Pods_tutu_test.framework */; };
 		E34165F61D181BBC00B7E8DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34165F51D181BBC00B7E8DF /* AppDelegate.swift */; };
 		E34165F81D181BBC00B7E8DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34165F71D181BBC00B7E8DF /* ViewController.swift */; };
 		E34165FB1D181BBC00B7E8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34165F91D181BBC00B7E8DF /* Main.storyboard */; };
@@ -14,6 +15,16 @@
 		E34166001D181BBC00B7E8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34165FE1D181BBC00B7E8DF /* LaunchScreen.storyboard */; };
 		E341660B1D181BBC00B7E8DF /* tutu_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E341660A1D181BBC00B7E8DF /* tutu_testTests.swift */; };
 		E34166161D181BBC00B7E8DF /* tutu_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34166151D181BBC00B7E8DF /* tutu_testUITests.swift */; };
+		E3C32CF11D1829E2009EDAE3 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF01D1829E2009EDAE3 /* Cities.swift */; };
+		E3C32CF51D182A01009EDAE3 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF41D182A01009EDAE3 /* Stations.swift */; };
+		E3C32CFA1D182FFF009EDAE3 /* Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF91D182FFF009EDAE3 /* Load.swift */; };
+		E3C32CFC1D18306C009EDAE3 /* FilePlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */; };
+		E3C32D021D1862C3009EDAE3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D011D1862C3009EDAE3 /* TableViewController.swift */; };
+		E3C32D041D1963F3009EDAE3 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D031D1963F3009EDAE3 /* Stat.swift */; };
+		E3C32D061D196852009EDAE3 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D051D196852009EDAE3 /* City.swift */; };
+		E3C32D081D198447009EDAE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D071D198447009EDAE3 /* DetailViewController.swift */; };
+		E3C32D0A1D198F12009EDAE3 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D091D198F12009EDAE3 /* DetailViewCell.swift */; };
+		E3C32D0C1D19AFE6009EDAE3 /* CopyrightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D0B1D19AFE6009EDAE3 /* CopyrightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		727BE4218D3A060922DC4DA0 /* Pods-tutu-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tutu-test/Pods-tutu-test.debug.xcconfig"; sourceTree = "<group>"; };
+		ABB7D22FC51CE3FFF8CBFDDB /* Pods-tutu-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutu-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-tutu-test/Pods-tutu-test.release.xcconfig"; sourceTree = "<group>"; };
+		AF94C83DC13D1C46449CB575 /* Pods_tutu_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tutu_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34165F21D181BBC00B7E8DF /* tutu-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tutu-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34165F51D181BBC00B7E8DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E34165F71D181BBC00B7E8DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,16 @@
 		E34166111D181BBC00B7E8DF /* tutu-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tutu-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34166151D181BBC00B7E8DF /* tutu_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutu_testUITests.swift; sourceTree = "<group>"; };
 		E34166171D181BBC00B7E8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C32CF01D1829E2009EDAE3 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		E3C32CF41D182A01009EDAE3 /* Stations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
+		E3C32CF91D182FFF009EDAE3 /* Load.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Load.swift; sourceTree = "<group>"; };
+		E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePlist.swift; sourceTree = "<group>"; };
+		E3C32D011D1862C3009EDAE3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E3C32D031D1963F3009EDAE3 /* Stat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		E3C32D051D196852009EDAE3 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		E3C32D071D198447009EDAE3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E3C32D091D198F12009EDAE3 /* DetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		E3C32D0B1D19AFE6009EDAE3 /* CopyrightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyrightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6633B4472246B6B20FAF7A43 /* Pods_tutu_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40239A30D6BE8DC947478006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF94C83DC13D1C46449CB575 /* Pods_tutu_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFFFBC4F3F12E1A63E10257 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				727BE4218D3A060922DC4DA0 /* Pods-tutu-test.debug.xcconfig */,
+				ABB7D22FC51CE3FFF8CBFDDB /* Pods-tutu-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E34165E91D181BBB00B7E8DF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				E34166091D181BBC00B7E8DF /* tutu-testTests */,
 				E34166141D181BBC00B7E8DF /* tutu-testUITests */,
 				E34165F31D181BBC00B7E8DF /* Products */,
+				CEFFFBC4F3F12E1A63E10257 /* Pods */,
+				40239A30D6BE8DC947478006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +143,15 @@
 			children = (
 				E34165F51D181BBC00B7E8DF /* AppDelegate.swift */,
 				E34165F71D181BBC00B7E8DF /* ViewController.swift */,
+				E3C32D011D1862C3009EDAE3 /* TableViewController.swift */,
+				E3C32D071D198447009EDAE3 /* DetailViewController.swift */,
+				E3C32D091D198F12009EDAE3 /* DetailViewCell.swift */,
+				E3C32D031D1963F3009EDAE3 /* Stat.swift */,
+				E3C32D051D196852009EDAE3 /* City.swift */,
+				E3C32CF91D182FFF009EDAE3 /* Load.swift */,
+				E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */,
+				E3C32D0B1D19AFE6009EDAE3 /* CopyrightViewController.swift */,
+				E3C32CF81D182D99009EDAE3 /* realm */,
 				E34165F91D181BBC00B7E8DF /* Main.storyboard */,
 				E34165FC1D181BBC00B7E8DF /* Assets.xcassets */,
 				E34165FE1D181BBC00B7E8DF /* LaunchScreen.storyboard */,
@@ -125,6 +178,15 @@
 			path = "tutu-testUITests";
 			sourceTree = "<group>";
 		};
+		E3C32CF81D182D99009EDAE3 /* realm */ = {
+			isa = PBXGroup;
+			children = (
+				E3C32CF01D1829E2009EDAE3 /* Cities.swift */,
+				E3C32CF41D182A01009EDAE3 /* Stations.swift */,
+			);
+			name = realm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E341661A1D181BBC00B7E8DF /* Build configuration list for PBXNativeTarget "tutu-test" */;
 			buildPhases = (
+				C9AEEA5E048AF305FADE02CB /* 📦 Check Pods Manifest.lock */,
 				E34165EE1D181BBC00B7E8DF /* Sources */,
 				E34165EF1D181BBC00B7E8DF /* Frameworks */,
 				E34165F01D181BBC00B7E8DF /* Resources */,
+				4A5FE4F6E369F61C8FC77585 /* 📦 Embed Pods Frameworks */,
+				87AB1A5D426E6893276B3D21 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +316,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A5FE4F6E369F61C8FC77585 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tutu-test/Pods-tutu-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87AB1A5D426E6893276B3D21 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tutu-test/Pods-tutu-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AEEA5E048AF305FADE02CB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E34165EE1D181BBC00B7E8DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C32CF11D1829E2009EDAE3 /* Cities.swift in Sources */,
+				E3C32D041D1963F3009EDAE3 /* Stat.swift in Sources */,
+				E3C32D061D196852009EDAE3 /* City.swift in Sources */,
+				E3C32D0A1D198F12009EDAE3 /* DetailViewCell.swift in Sources */,
+				E3C32D0C1D19AFE6009EDAE3 /* CopyrightViewController.swift in Sources */,
+				E3C32D021D1862C3009EDAE3 /* TableViewController.swift in Sources */,
+				E3C32CFA1D182FFF009EDAE3 /* Load.swift in Sources */,
+				E3C32CFC1D18306C009EDAE3 /* FilePlist.swift in Sources */,
+				E3C32CF51D182A01009EDAE3 /* Stations.swift in Sources */,
+				E3C32D081D198447009EDAE3 /* DetailViewController.swift in Sources */,
 				E34165F81D181BBC00B7E8DF /* ViewController.swift in Sources */,
 				E34165F61D181BBC00B7E8DF /* AppDelegate.swift in Sources */,
 			);
@@ -399,6 +522,7 @@
 		};
 		E341661B1D181BBC00B7E8DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 727BE4218D3A060922DC4DA0 /* Pods-tutu-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "tutu-test/Info.plist";
@@ -410,6 +534,7 @@
 		};
 		E341661C1D181BBC00B7E8DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB7D22FC51CE3FFF8CBFDDB /* Pods-tutu-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "tutu-test/Info.plist";
@@ -484,6 +609,7 @@
 				E341661C1D181BBC00B7E8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E341661D1D181BBC00B7E8DF /* Build configuration list for PBXNativeTarget "tutu-testTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +618,7 @@
 				E341661F1D181BBC00B7E8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E34166201D181BBC00B7E8DF /* Build configuration list for PBXNativeTarget "tutu-testUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +627,7 @@
 				E34166221D181BBC00B7E8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
