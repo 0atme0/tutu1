@@ -31,6 +31,11 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         
     
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -111,6 +116,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         if let indexPath = tableView.indexPathForSelectedRow {
             let destinationController = segue.destinationViewController as! DetailViewController
             destinationController.Station = (Search.active) ? searchResult[indexPath.row] : sorted_list[indexPath.row]
+            Search.searchBar.hidden=true
         }
 
         }
@@ -139,7 +145,8 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
     
 //unwind segue
     @IBAction func close(segue:UIStoryboardSegue){
-        
+        Search.searchBar.hidden=false
+
     }
     
     
