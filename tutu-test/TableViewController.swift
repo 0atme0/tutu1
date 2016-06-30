@@ -25,7 +25,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
         Search.searchResultsUpdater = self
         Search.dimsBackgroundDuringPresentation = false
         
-        stat_list = city.LoadToClass(from)
+     //   stat_list = city.LoadToClass(from)
         sorted_list_temp = stat_list.sort { $0.cityTitle < $1.cityTitle }
         sorted_list = stat_list.sort { $0.countryTitle < $1.countryTitle }
         

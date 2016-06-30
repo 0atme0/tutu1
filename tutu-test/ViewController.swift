@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var LabelFrom: UILabel!
     var file: FilePlist = FilePlist()
     var city = Load()
+    var arrayFrom : [Stat] = []
+    var arrayTo : [Stat] = []
 
     @IBAction func book(sender: AnyObject) {
         let dateFormatter = NSDateFormatter()
@@ -42,7 +44,10 @@ class ViewController: UIViewController {
 //проверяем был ли джсон загружен в базу
         if file.flag == nil {
             city.LoadJson()
-        }
+        } else{
+    arrayFrom = city.LoadToClass(true)
+    arrayTo = city.LoadToClass(false)
+    }
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,13 +58,13 @@ class ViewController: UIViewController {
         if segue.identifier == "1" {
                 
                 let destVC = segue.destinationViewController as! TableViewController
-                destVC.from = true
+            destVC.stat_list = arrayFrom
             
         }
         if segue.identifier == "0" {
             
             let destVC = segue.destinationViewController as! TableViewController
-            destVC.from = false
+            destVC.stat_list = arrayTo
         }
     }
     
