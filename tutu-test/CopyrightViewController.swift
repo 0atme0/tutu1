@@ -17,7 +17,9 @@ class CopyrightViewController: UIViewController {
 //Начальные значения во время загрузки
         let scale = CGAffineTransformMakeScale(0.0, 0.0)
         let translation = CGAffineTransformMakeTranslation(0, -5000)
-        stack.transform = CGAffineTransformConcat(scale, translation)    }
+        stack.transform = CGAffineTransformConcat(scale, translation)
+
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

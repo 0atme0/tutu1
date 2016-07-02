@@ -8,26 +8,27 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, UISearchResultsUpdating {
-    var city = Load()
-    var from : Bool = false
-    var Search : UISearchController!
-    var searchResult : [Stat] = []
-    var stat_list: [Stat] = []
-    var sorted_list:[Stat] = []
-    var sorted_list_temp:[Stat] = []
+class ListOfStationsViewController: UITableViewController, UISearchResultsUpdating {
+    var loadData = LoadDataOfStations()
+    var searchController : UISearchController!
+    var searchResult : [ClassStation] = []
+    var stationsList: [ClassStation] = []
+    var sortedList:[ClassStation] = []
+    var sortedListTemp:[ClassStation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Search = UISearchController(searchResultsController: nil)
-        tableView.tableHeaderView = Search.searchBar
-        Search.searchResultsUpdater = self
-        Search.dimsBackgroundDuringPresentation = false
+        searchController = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.tintColor = UIColor.whiteColor()
+        searchController.searchBar.backgroundColor = UIColor.blackColor()
+        searchController.searchBar.placeholder = "Search station..."
         
-     //   stat_list = city.LoadToClass(from)
-        sorted_list_temp = stat_list.sort { $0.cityTitle < $1.cityTitle }
-        sorted_list = stat_list.sort { $0.countryTitle < $1.countryTitle }
+        sortedListTemp = stationsList.sort { $0.cityTitle < $1.cityTitle }
+        sortedList = stationsList.sort { $0.countryTitle < $1.countryTitle }
         
     
     }
@@ -49,18 +50,18 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if Search.active {
+        if searchController.active {
             return searchResult.count
         } else {
-            return sorted_list.count
+            return sortedList.count
         }
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell1", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellsOfStation", forIndexPath: indexPath)
         
-        let station = (Search.active) ? searchResult[indexPath.row] : sorted_list[indexPath.row]
+        let station = (searchController.active) ? searchResult[indexPath.row] : sortedList[indexPath.row]
         
         cell.textLabel?.text = station.cityTitle
         cell.detailTextLabel?.text = station.stationTitle
@@ -74,7 +75,7 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if Search.active {
+        if searchController.active {
             return false
         } else {
             return true
@@ -112,11 +113,11 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
     
     // MARK: - Navigation
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     if segue.identifier == "detail" {
+     if segue.identifier == "segueDetailsOfStation" {
         if let indexPath = tableView.indexPathForSelectedRow {
-            let destinationController = segue.destinationViewController as! DetailViewController
-            destinationController.Station = (Search.active) ? searchResult[indexPath.row] : sorted_list[indexPath.row]
-            Search.searchBar.hidden=true
+            let destinationController = segue.destinationViewController as! DetailOfStationnViewController
+            destinationController.station = (searchController.active) ? searchResult[indexPath.row] : sortedList[indexPath.row]
+            searchController.searchBar.hidden=true
         }
 
         }
@@ -133,19 +134,20 @@ class TableViewController: UITableViewController, UISearchResultsUpdating {
     }
 
     func filterContent(searchText: String) {
-        searchResult = sorted_list.filter({ (stat:Stat)->Bool in
-            let cityMatch = stat.cityTitle.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
-            let stationMatch = stat.stationTitle.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+        dispatch_sync(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
+        self.searchResult = self.sortedList.filter({ (station:ClassStation)->Bool in
+            let cityMatch = station.cityTitle.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            let stationMatch = station.stationTitle.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
             
             return cityMatch != nil || stationMatch != nil
         })
-
+        }
     
     }
     
 //unwind segue
     @IBAction func close(segue:UIStoryboardSegue){
-        Search.searchBar.hidden=false
+        searchController.searchBar.hidden=false
 
     }
     

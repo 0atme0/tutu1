@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AsyncSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-tutu-test.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>003992333DA8CC48352A2A82990E0F53</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D76465886216D174131FE2985F941EC</key>
+		<key>66887927FEE0C1CC782D60231935F34A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80D8DA41314AB2690C919601722435FC</key>
+		<key>B5E5C439CEDC5739739C1E957B2F616A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCC1C208BF9E7DC4F44A4E659B246D0C</key>
+		<key>D1DC35DB2C695031A72543555FB23729</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E2541D64C60A493E74525D8D9C0031BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0F2E2975714653C623A4F371740DE77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
