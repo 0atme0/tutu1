@@ -59,7 +59,7 @@ class ListOfStationsViewController: UITableViewController, UISearchResultsUpdati
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cellsOfStation", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellOfStations", forIndexPath: indexPath)
         
         let station = (searchController.active) ? searchResult[indexPath.row] : sortedList[indexPath.row]
         

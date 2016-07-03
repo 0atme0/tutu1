@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var labelTo: UILabel!
     @IBOutlet weak var labelFrom: UILabel!
-    var file: FilePlist = FilePlist()
     var loadData = LoadDataOfStations()
     var arrayFrom : [ClassStation] = []
     var arrayTo : [ClassStation] = []
@@ -56,7 +55,7 @@ class MainViewController: UIViewController {
 
         super.viewDidLoad()
 //проверяем был ли джсон загружен в базу
-        if file.flag == nil {
+        if NSUserDefaults.standardUserDefaults().objectForKey("didChanged") == nil {
         loadData.loadJson({(completion: Bool) -> () in
             
             let asyncGroup = dispatch_group_create()

@@ -19,7 +19,6 @@ class LoadDataOfStations{
     func loadJson(completion: (Bool)->()){
         
         let asyncGroup = dispatch_group_create()
-        var checkToLoad: FilePlist = FilePlist()
         let url = "https://raw.githubusercontent.com/tutu-ru/hire_ios-test/master/allStations.json"
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
@@ -89,7 +88,8 @@ class LoadDataOfStations{
                             realm.add(city, update: true)
                         }
                     }
-                    checkToLoad.flag = true
+                    NSUserDefaults.standardUserDefaults().setObject(true, forKey: "didChanged")
+                    NSUserDefaults.standardUserDefaults().synchronize()
                     
                 }
                 }

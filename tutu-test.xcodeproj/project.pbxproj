@@ -18,7 +18,6 @@
 		E3C32CF11D1829E2009EDAE3 /* DatabaseOfCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF01D1829E2009EDAE3 /* DatabaseOfCities.swift */; };
 		E3C32CF51D182A01009EDAE3 /* DatabaseOfStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF41D182A01009EDAE3 /* DatabaseOfStations.swift */; };
 		E3C32CFA1D182FFF009EDAE3 /* LoadDataOfStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CF91D182FFF009EDAE3 /* LoadDataOfStations.swift */; };
-		E3C32CFC1D18306C009EDAE3 /* FilePlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */; };
 		E3C32D021D1862C3009EDAE3 /* ListOfStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D011D1862C3009EDAE3 /* ListOfStationsViewController.swift */; };
 		E3C32D041D1963F3009EDAE3 /* ClassStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D031D1963F3009EDAE3 /* ClassStation.swift */; };
 		E3C32D061D196852009EDAE3 /* ClassCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C32D051D196852009EDAE3 /* ClassCity.swift */; };
@@ -63,7 +62,6 @@
 		E3C32CF01D1829E2009EDAE3 /* DatabaseOfCities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseOfCities.swift; sourceTree = "<group>"; };
 		E3C32CF41D182A01009EDAE3 /* DatabaseOfStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseOfStations.swift; sourceTree = "<group>"; };
 		E3C32CF91D182FFF009EDAE3 /* LoadDataOfStations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDataOfStations.swift; sourceTree = "<group>"; };
-		E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePlist.swift; sourceTree = "<group>"; };
 		E3C32D011D1862C3009EDAE3 /* ListOfStationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfStationsViewController.swift; sourceTree = "<group>"; };
 		E3C32D031D1963F3009EDAE3 /* ClassStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassStation.swift; sourceTree = "<group>"; };
 		E3C32D051D196852009EDAE3 /* ClassCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassCity.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				E3C32D031D1963F3009EDAE3 /* ClassStation.swift */,
 				E3C32D051D196852009EDAE3 /* ClassCity.swift */,
 				E3C32CF91D182FFF009EDAE3 /* LoadDataOfStations.swift */,
-				E3C32CFB1D18306C009EDAE3 /* FilePlist.swift */,
 				E3C32D0B1D19AFE6009EDAE3 /* CopyrightViewController.swift */,
 				E3C32CF81D182D99009EDAE3 /* realm */,
 				E34165F91D181BBC00B7E8DF /* Main.storyboard */,
@@ -372,7 +369,6 @@
 				E3C32D0C1D19AFE6009EDAE3 /* CopyrightViewController.swift in Sources */,
 				E3C32D021D1862C3009EDAE3 /* ListOfStationsViewController.swift in Sources */,
 				E3C32CFA1D182FFF009EDAE3 /* LoadDataOfStations.swift in Sources */,
-				E3C32CFC1D18306C009EDAE3 /* FilePlist.swift in Sources */,
 				E3FA88E21D27F71E00E00A24 /* DetailOfStationnViewController.swift in Sources */,
 				E3C32CF51D182A01009EDAE3 /* DatabaseOfStations.swift in Sources */,
 				E34165F81D181BBC00B7E8DF /* MainViewController.swift in Sources */,
