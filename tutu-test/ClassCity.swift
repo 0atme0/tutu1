@@ -10,17 +10,17 @@
 
 import UIKit
 
-class City {
+class ClassCity {
 
-    var city_from: Bool = true
-    var country_title: String = ""
-    var point_longitude: Double = 0.0
-    var point_latitude: Double = 0.0
+    var cityFrom: Bool = true
+    var countryTitle: String = ""
+    var pointLongitude: Double = 0.0
+    var pointLatitude: Double = 0.0
     var districtTitle: String = ""
-    var city_id: Int = 0
-    var city_title: String = ""
-    var region_title: String = ""
+    var cityId: Int = 0
+    var cityTitle: String = ""
+    var regionTitle: String = ""
     
-    var stations : [Stat] = []
+    var stations : [ClassStation] = []
     
 }

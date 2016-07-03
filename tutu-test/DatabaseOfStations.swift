@@ -12,13 +12,13 @@
 import Foundation
 import RealmSwift
 
-class Stations: Object{
+class DatabaseOfStations: Object{
 
 
    
     dynamic var countryTitle : String = ""
-    dynamic var point_longitude: Double = 0.0
-    dynamic var point_latitude: Double = 0.0
+    dynamic var pointLongitude: Double = 0.0
+    dynamic var pointLatitude: Double = 0.0
     dynamic var districtTitle : String = ""
     dynamic var cityId : Int = 0
     dynamic var cityTitle : String = ""

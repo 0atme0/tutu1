@@ -9,11 +9,11 @@
 //Класс для удобного использования массива станций
 import UIKit
 
-class Stat {
+class ClassStation {
 
     var countryTitle : String = ""
-    var point_longitude: Double = 0.0
-    var point_latitude: Double = 0.0
+    var pointLongitude: Double = 0.0
+    var pointLatitude: Double = 0.0
     var districtTitle : String = ""
     var cityId : Int = 0
     var cityTitle : String = ""
